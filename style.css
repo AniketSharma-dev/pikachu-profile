@@ -1,16 +1,18 @@
-html,body{
+html,
+body {
   overflow-x: hidden;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
+
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f0f2f5;
-  color: #333;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   line-height: 1.6;
-  
+
 }
 
 header {
@@ -103,7 +105,7 @@ ul {
 ul li {
   display: inline-block;
   /* Display list items inline for horizontal layout without flex */
-  background: #f0f2f5;
+  background: var(--card-bg);
   padding: 10px 15px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -119,8 +121,8 @@ ul li {
   align-items: center;
 }
 
-.imgContainer{
-  
+.imgContainer {
+
   white-space: nowrap;
   animation: slide 20s linear infinite;
 
@@ -141,6 +143,7 @@ ul li {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -158,19 +161,19 @@ ul li {
   transform: scale(1.10);
 }
 
-form{
+form {
   width: 100%;
 
   margin: 20px auto;
 }
 
-.formContainer{
+.formContainer {
   width: 100%;
   max-width: 500px;
   border-radius: 1rem;
   margin: 20px auto;
   padding: 20px;
-  background: #fff;
+  background: var(--card-bg);
   box-shadow: 0 5px 15px rgba(0, 00, 0, 0.1);
   text-align: left;
 }
@@ -236,12 +239,14 @@ footer {
 }
 
 @keyframes bounce {
-  0%{
+  0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(30px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -249,8 +254,20 @@ footer {
 
 
 @media (max-width: 600px) {
-  .formContainer{
+  .formContainer {
     width: auto;
     margin: 20px;
   }
+}
+
+:root {
+  --bg-color: #f0f2f5;
+  --text-color: #333;
+  --card-bg: #fff;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --card-bg: #2a2a2a;
 }
