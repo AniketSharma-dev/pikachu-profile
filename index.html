@@ -1,96 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pikachu profile</title>
+    <link rel="shortcut icon" href="./assets/image.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pikachu profile</title>
-  <link rel="shortcut icon" href="./assets/image.png" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <header>
+      <h1>Welcome to My World !</h1>
+      <p class="poke">
+        This is Pikachu, an <span id="typing-text"></span>
+        <img class="pokeball" src="./assets/image.png" alt="Pokeball Icon" />
+      </p>
+    </header>
+    <hr />
+    <section>
+      <h2>About Me</h2>
+      <p>Hello! I’m Pikachu, and here’s a little Info about Me.</p>
+      <img class="pikachu" src="./assets/cute-pikachu.jpg" alt="Pikachu Img" />
+    </section>
+    <hr />
 
-<body>
-  <header>
-    <h1>Welcome to My World !</h1>
-    <p class="poke">This is Pikachu, an <span id="typing-text"></span> <img class="pokeball" src="./assets/image.png" alt="Pokeball Icon"> </p>
-  </header>
-  <hr />
-  <section>
-    <h2>About Me</h2>
-    <p>Hello! I’m Pikachu, and here’s a little Info about Me.</p>
-    <img class="pikachu" src="./assets/cute-pikachu.jpg" alt="Pikachu Img"   />
-  </section>
-  <hr />
+    <section>
+      <h2>Contact Information</h2>
+      <p>Let's connect!</p>
 
-  <section>
-    <h2>Contact Information</h2>
-    <p>Let's connect!</p>
-    
-    <p>
-      <a href="mailto:aniketsharma.xo@gmail.com" class="icon-link email-icon"><i class="fas fa-envelope"></i></a>
+      <p>
+        <a href="mailto:aniketsharma.xo@gmail.com" class="icon-link email-icon"
+          ><i class="fas fa-envelope"></i
+        ></a>
 
-      <a href="https://linkedin.com" class="icon-link linkedin-icon"><i class="fab fa-linkedin"></i></a>
-    </p>
-  </section>
-  <hr />
-
-  <section>
-    <h2>My Skills</h2>
-    <table align="center">
-      <tr>
-        <td>
-          <ul style="text-align: left">
-            <li>Thunder Shock</li>
-            <li>Thunder Bolt</li>
-            <li>Quick Attack</li>
-          </ul>
-        </td>
-      </tr>
-    </table>
-  </section>
-  <hr />
-  <section>
-    <h2>Portfolio</h2>
-    <p>Take a look at some of my works.</p>
-    <p>
-      <a href="./project.html">Project 1</a> |
-      <a href="google.com">Project 2</a>
-    </p>
-  </section>
-  <hr />
-
-  <section>
-    <h2>Contact Me</h2>
-    <form action="" >
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter Your Name" required />
+        <a href="https://linkedin.com" class="icon-link linkedin-icon"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </p>
+    </section>
+    <hr />
+    <section>
+      <h2>My Skills</h2>
+      <table align="center">
+        <tr>
+          <td>
+            <ul class="bounce" style="text-align: center">
+              <li><i class="fas fa-bolt"></i> Thunder Shock</li>
+              <li><i class="fas fa-bolt"></i> Thunder Bolt</li>
+              <li><i class="fas fa-running"></i> Quick Attack</li>
+              <li><i class="fas fa-bolt"></i> Iron Tail</li>
+              <li><i class="fas fa-bolt"></i> Electro Ball</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+      <div class="skills-icons">
+        <div class="imgContainer">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+            alt="Python"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
+            alt="TypeScript"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
+            alt="C++"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg"
+            alt="Ruby"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+            alt="HTML5"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+            alt="CSS3"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+            alt="JavaScript"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png"
+            alt="C#"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+            alt="C"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+            alt="PHP"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Python.svg"
+            alt="Python"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
+            alt="Node.js"
+            class="icon-image"
+          />
+        </div>
+        <div class="imgContainer">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+            alt="Python"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
+            alt="TypeScript"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
+            alt="C++"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg"
+            alt="Ruby"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+            alt="HTML5"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+            alt="CSS3"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+            alt="JavaScript"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png"
+            alt="C#"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+            alt="C"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+            alt="PHP"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Python.svg"
+            alt="Python"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
+            alt="Node.js"
+            class="icon-image"
+          />
+        </div>
+        <div class="imgContainer">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+            alt="Python"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
+            alt="TypeScript"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
+            alt="C++"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg"
+            alt="Ruby"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+            alt="HTML5"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+            alt="CSS3"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+            alt="JavaScript"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png"
+            alt="C#"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+            alt="C"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+            alt="PHP"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Python.svg"
+            alt="Python"
+            class="icon-image"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
+            alt="Node.js"
+            class="icon-image"
+          />
+        </div>
       </div>
+    </section>
+    <hr />
+    <section>
+      <h2>Portfolio</h2>
+      <p>Take a look at some of my works.</p>
+      <p>
+        <a href="./project.html">Project 1</a> |
+        <a href="google.com">Project 2</a>
+      </p>
+    </section>
+    <hr />
 
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter Your Email" required />
-      </div>
+    <section>
+      <h2>Contact Me</h2>
+      <form action="">
+        <div class="formContainer">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter Your Name"
+              required
+            />
+          </div>
 
-      <div class="form-group">
-        <label for="message">Message:</label>
-        <textarea type="text" id="message" name="message" placeholder="Write Your Message" cols="50"
-          required></textarea>
-      </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter Your Email"
+              required
+            />
+          </div>
 
-      <button type="submit" onsubmit="sConsole(e)">Send</button>
-    </form>
-  </section>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea
+              type="text"
+              id="message"
+              name="message"
+              placeholder="Write Your Message"
+              cols="50"
+              required
+            ></textarea>
+          </div>
 
-  <footer>
-    <p>&copy; 2024 Aniket. Built by WarriorsWayHub.</p>
-  </footer>
+          <button type="submit" onsubmit="sConsole(e)">Send</button>
+        </div>
+      </form>
+    </section>
 
-  <script src="script.js"></script>
-  <script src="https://kit.fontawesome.com/6d683669db.js" crossorigin="anonymous"></script>
-</body>
+    <footer>
+      <p>&copy; 2024 Aniket. Built by WarriorsWayHub.</p>
+    </footer>
 
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6d683669db.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

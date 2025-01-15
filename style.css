@@ -1,8 +1,16 @@
+html,body{
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f0f2f5;
   color: #333;
   line-height: 1.6;
+  
 }
 
 header {
@@ -19,19 +27,24 @@ header {
 
 h1,
 h2 {
+  padding: 0 10px;
   font-weight: 700;
 }
+
 p {
   font-weight: 400;
 }
+
 a {
   color: #0070ff;
   text-decoration: none;
 }
+
 a:hover {
   color: #005660;
   text-decoration: underline;
 }
+
 hr {
   width: 50%;
   margin: 20px auto;
@@ -49,17 +62,22 @@ section {
   margin-right: 1px;
   color: inherit;
 }
+
 /* Icon links to display as large circles */
 .icon-link {
-  display: inline-block; /* Display icon links inline with block formatting */
-  margin: 0 10px; /* Adds space on the left and right of each icon */
+  display: inline-block;
+  /* Display icon links inline with block formatting */
+  margin: 0 10px;
+  /* Adds space on the left and right of each icon */
   width: 60px;
   height: 60px;
   border-radius: 50%;
   color: #fff;
   font-size: 24px;
-  line-height: 60px; /* Vertically centers the icons */
-  text-align: center; /* Centers the icon within the link */
+  line-height: 60px;
+  /* Vertically centers the icons */
+  text-align: center;
+  /* Centers the icon within the link */
 }
 
 .email-icon {
@@ -78,16 +96,54 @@ section {
 ul {
   list-style-type: none;
   padding: 0;
-  text-align: center; /* Center align the list without flex */
+  text-align: center;
+  /* Center align the list without flex */
 }
 
 ul li {
-  display: inline-block; /* Display list items inline for horizontal layout without flex */
+  display: inline-block;
+  /* Display list items inline for horizontal layout without flex */
   background: #f0f2f5;
   padding: 10px 15px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 0 5px; /* Add spacing between list items */
+  margin: 5px 5px;
+  /* Add spacing between list items */
+}
+
+.skills-icons {
+  width: 100%;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgContainer{
+  
+  white-space: nowrap;
+  animation: slide 20s linear infinite;
+
+}
+
+.icon-image {
+  width: fit-content;
+  height: 100px;
+  /* white-space: nowrap; */
+  margin-left: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  background: none;
+
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .pikachu {
@@ -97,11 +153,18 @@ ul li {
   box-shadow: 0 5px 15px rgba(0, 00, 0, 0.2);
   object-fit: cover;
 }
-.pikachu:hover{
+
+.pikachu:hover {
   transform: scale(1.10);
 }
 
-form {
+form{
+  width: 100%;
+
+  margin: 20px auto;
+}
+
+.formContainer{
   width: 100%;
   max-width: 500px;
   border-radius: 1rem;
@@ -115,9 +178,12 @@ form {
 .form-group {
   margin-bottom: 15px;
 }
+
 .form-group label {
-  display: block; /* Make label a block element */
-  margin-bottom: 5px; /* Space between label and input */
+  display: block;
+  /* Make label a block element */
+  margin-bottom: 5px;
+  /* Space between label and input */
 }
 
 form input[type="text"],
@@ -135,10 +201,12 @@ form textarea {
 }
 
 form button {
-  display: block; /* Block level so it doesn't inline */
+  display: block;
+  /* Block level so it doesn't inline */
   width: 100%;
   padding: 10px 20px;
-  margin-top: 10px; /* Space above the button */
+  margin-top: 10px;
+  /* Space above the button */
   background-image: linear-gradient(to right, #831bcd, #f9620b);
   color: #fff;
   border: none;
@@ -150,6 +218,7 @@ form button {
 form button:hover {
   background-image: linear-gradient(to right, #f9620b, #831bcd);
 }
+
 footer {
   background: linear-gradient(to right, #831bcd, #f9620b);
   color: #fff;
@@ -158,4 +227,30 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
+}
+
+
+
+.bounce {
+  animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+  0%{
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 600px) {
+  .formContainer{
+    width: auto;
+    margin: 20px;
+  }
 }
