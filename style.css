@@ -1,0 +1,161 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(to right, rgb(151, 17, 151), orange);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.pokeball {
+  width: 20px;
+  height: 20px;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+p {
+  font-weight: 400;
+}
+a {
+  color: #0070ff;
+  text-decoration: none;
+}
+a:hover {
+  color: #005660;
+  text-decoration: underline;
+}
+hr {
+  width: 50%;
+  margin: 20px auto;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+.fas,
+.fab {
+  margin-right: 1px;
+  color: inherit;
+}
+/* Icon links to display as large circles */
+.icon-link {
+  display: inline-block; /* Display icon links inline with block formatting */
+  margin: 0 10px; /* Adds space on the left and right of each icon */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 24px;
+  line-height: 60px; /* Vertically centers the icons */
+  text-align: center; /* Centers the icon within the link */
+}
+
+.email-icon {
+  background-color: #dd4b39;
+}
+
+.linkedin-icon {
+  background-color: #0a66c2;
+}
+
+.icon-link:hover {
+  transform: scale(1.1);
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center; /* Center align the list without flex */
+}
+
+ul li {
+  display: inline-block; /* Display list items inline for horizontal layout without flex */
+  background: #f0f2f5;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 5px; /* Add spacing between list items */
+}
+
+.pikachu {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 00, 0, 0.2);
+  object-fit: cover;
+}
+.pikachu:hover{
+  transform: scale(1.10);
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 1rem;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 00, 0, 0.1);
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block; /* Make label a block element */
+  margin-bottom: 5px; /* Space between label and input */
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form textarea {
+  height: 40px;
+}
+
+form button {
+  display: block; /* Block level so it doesn't inline */
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 10px; /* Space above the button */
+  background-image: linear-gradient(to right, #831bcd, #f9620b);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+form button:hover {
+  background-image: linear-gradient(to right, #f9620b, #831bcd);
+}
+footer {
+  background: linear-gradient(to right, #831bcd, #f9620b);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
